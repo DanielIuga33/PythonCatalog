@@ -211,8 +211,8 @@ class Ui:
             print(f"Discipline: [id={self.srv_dp.find_discipline_by_id(elem[0]).get_id()}]->"
                   f"{self.srv_dp.find_discipline_by_id(elem[0]).get_name()},  "
                   f"Student: [id={self.srv_stud.find_student_by_id(elem[1]).get_id()}]->"
-                  f"{self.srv_stud.find_student_by_id(elem[1]).get_name()}"
-                  f" {self.srv_stud.find_student_by_id(elem[1]).get_surname()}, "
+                  f"{self.srv_stud.find_student_by_id(elem[1]).get_name()} "
+                  f"{self.srv_stud.find_student_by_id(elem[1]).get_surname()}, "
                   f"Grade: {elem[2]}")
         time.sleep(1.5)
 
@@ -222,7 +222,7 @@ class Ui:
         for elem in self.srv_dsn.get_all():
             if elem[0] == idd:
                 print(f"Student: [id={self.srv_stud.find_student_by_id(elem[1]).get_id()}]->"
-                      f"{self.srv_stud.find_student_by_id(elem[1]).get_name()}"
+                      f"{self.srv_stud.find_student_by_id(elem[1]).get_name()} "
                       f"{self.srv_stud.find_student_by_id(elem[1]).get_surname()}, "
                       f"Grade: {elem[2]}")
         time.sleep(1.5)
